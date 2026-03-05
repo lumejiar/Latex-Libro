@@ -1,1 +1,46 @@
+## Archivos auxiliares de LaTeX
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.synctex(busy)
+*.blg
+*.bbl
+*.bcf
+*.run.xml
+*.nav
+*.snm
+*.vrb
+*.idx
+*.ind
+*.ilg
+*.glg
+*.glo
+*.gls
+*.xdy
 
+## PDF compilado (opcional: coméntar si quieren compartir el PDF)
+*.pdf
+
+## Carpeta de build si usan latexmk
+build/
+out/
+```
+
+> Si quieren que el PDF compilado sí esté disponible en el repo, comenta la línea `*.pdf`.
+
+---
+
+### 4. Flujo de trabajo con ramas (sin conflictos)
+
+Con experiencia básica en Git, el flujo más sencillo y seguro es **una rama por persona**:
+```
+main          ← versión estable, nadie escribe directo aquí
+├── rama-Erica
+├── rama-Edwin
+└── rama-Luis Fernando
